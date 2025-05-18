@@ -1,5 +1,7 @@
 package ru.netogy;
 
+import java.util.OptionalInt;
+
 public class Person {
     private final String name;
     private final String surname;
@@ -21,8 +23,8 @@ public class Person {
         return surname;
     }
 
-    public Integer getAge() {
-        return age;
+    public OptionalInt getAge() {
+        return OptionalInt.of(age);
     }
 
     public String getAddress() {
